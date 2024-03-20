@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 // TODO update entire page to utilize Sanity data
 export default function Home() {
   return (
