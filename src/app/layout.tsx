@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { draftMode } from "next/headers";
-import LiveVisualEditing from "@/components/LiveVisualEditing";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -22,7 +20,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
-        {draftMode().isEnabled && <LiveVisualEditing />}
       </body>
     </html>
   );
